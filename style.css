@@ -1,104 +1,173 @@
-/
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #172554;
     color: white;
-    text-align: center;
-    padding: 20px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Navigation */
-nav {
-    margin-top: 15px;
+header h2 {
+    font-size: 24px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
-    font-size: 16px;
+    margin-left: 20px;
 }
 
 nav a:hover {
-    color: yellow;
-    text-decoration: underline;
+    color: #93c5fd;
 }
 
-/* Sections */
-section {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 8px;
+/* Home Section */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #dbeafe;
+    padding: 30px;
 }
 
-/* Headings */
-h2 {
-    color: #333;
-    border-bottom: 2px solid #555;
-    padding-bottom: 8px;
+.hero h1 {
+    font-size: 42px;
+    color: #172554;
+    margin-bottom: 10px;
 }
 
-h3 {
-    color: #444;
+.hero h3 {
+    margin-bottom: 10px;
 }
 
-/* Lists */
-ul {
-    line-height: 1.8;
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-/* Contact form */
-input, textarea {
-    width: 90%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #333;
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #172554;
     color: white;
-    padding: 10px 20px;
-    border: none;
+    padding: 12px 25px;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+.btn:hover {
+    background-color: #2563eb;
+}
+
+/* Common Section Styling */
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    text-align: center;
+    color: #172554;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects Section */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    background-color: #dbeafe;
+}
+
+.contact a {
+    color: #172554;
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #172554;
     color: white;
     text-align: center;
     padding: 15px;
 }
 
-/* Mobile responsive design */
-@media screen and (max-width: 600px) {
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     nav a {
-        display: block;
-        margin: 10px;
+        margin: 5px;
     }
 
-    section {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    input, textarea {
-        width: 95%;
+    .hero h1 {
+        font-size: 30px;
     }
 }
+```
