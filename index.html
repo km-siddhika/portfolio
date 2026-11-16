@@ -1,152 +1,111 @@
-
+```html
 <!DOCTYPE html>
-<html ></html>
+<html lang="en">
 <head>
-    
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href ="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhika | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Navigation Bar -->
     <header>
-        <h1>My Portfolio</h1>
+        <h2>Siddhika.</h2>
 
         <nav>
-            <a href="#home">Home</a> |
-            <a href="#about">About</a> |
-            <a href="#education">Education</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#hobbies">Hobbies</a> |
-            <a href="#achievements">Achievements</a> |
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <hr>
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Hi, I'm Siddhika!</h1>
+        <h3>B.Tech Student | CSE - AI & ML</h3>
+        <p>Exploring technology, learning to code and building new things.</p>
 
-    <section id="home">
-        <h2>Home</h2>
-        <h3>Hello, I'm Siddhika!</h3>
-        <p>
-            I am a first-year engineering student interested in
-            Artificial Intelligence and Machine Learning.
-            I enjoy learning new technologies and improving my coding skills.
-        </p>
+        <a href="#about" class="btn">Know More</a>
     </section>
 
-    <hr>
-
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am currently studying Computer Science with a specialization
-            in Artificial Intelligence and Machine Learning.
-            I like exploring new ideas, learning programming and working
-            on small projects.
-        </p>
+
+        <div class="about">
+            <p>
+                I'm a first-year B.Tech student specializing in Computer
+                Science and Artificial Intelligence & Machine Learning.
+                I'm interested in programming, web development and exploring
+                new technologies. I enjoy learning new skills and working
+                on projects that help me improve my knowledge.
+            </p>
+        </div>
     </section>
 
-    <hr>
-
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Current:</strong> B.Tech in Computer Science
-                (AI & ML)
-            </li>
-            <li>
-                <strong>College:</strong> Bosscoder School of Technology
-            </li>
-            <li>
-                <strong>Previous Education:</strong> Higher Secondary Education
-            </li>
-        </ul>
-    </section>
-
-    <hr>
-
+    <!-- Skills Section -->
     <section id="skills">
         <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>Python Basics</li>
-            <li>Problem Solving</li>
-            <li>Teamwork</li>
-        </ul>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">Problem Solving</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
     </section>
 
-    <hr>
-
+    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
 
-        <h3>1. Branchly</h3>
-        <p>
-            A project developed to help users explore and manage
-            information in a simple way.
-        </p>
+        <div class="project-container">
 
-        <h3>2. HoneyChain</h3>
-        <p>
-            A project idea based on blockchain technology to improve
-            honey traceability.
-        </p>
+            <div class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A simple website created using HTML and CSS to showcase my profile.</p>
+            </div>
+
+            <div class="project">
+                <h3>Web Development</h3>
+                <p>Beginner-level web development programs created while learning HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Java Programs</h3>
+                <p>Basic Java programs focused on logic building and problem solving.</p>
+            </div>
+
+        </div>
     </section>
 
-    <hr>
-
-    <section id="hobbies">
-        <h2>Hobbies and Interests</h2>
-        <ul>
-            <li>Learning coding</li>
-            <li>Exploring technology</li>
-            <li>Listening to music</li>
-            <li>Working on creative projects</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Participated in college project activities.</li>
-            <li>Worked on technical project ideas.</li>
-            <li>Continuously learning programming concepts.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="contact">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <h2>Contact Me</h2>
 
-        <form onsubmit="return validateForm()">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" required><br><br>
+        <p>Email:
+            <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+        </p>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" required><br><br>
-
-            <label for="message">Message:</label><br>
-            <textarea id="message" rows="5" required></textarea><br><br>
-
-            <button type="submit">Send Message</button>
-        </form>
+        <p>GitHub:
+            <a href="https://github.com/yourusername" target="_blank">
+                Visit My GitHub
+            </a>
+        </p>
     </section>
 
-    <hr>
-
+    <!-- Footer -->
     <footer>
-        <p>© 2026 My Portfolio. All rights reserved.</p>
+        <p>© 2026 Siddhika | Personal Portfolio</p>
     </footer>
-
-    
 
 </body>
 </html>
+```
